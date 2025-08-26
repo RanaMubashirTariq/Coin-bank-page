@@ -68,7 +68,7 @@ export default function TestimonialsSection  () {
 
               <div className="flex flex-col items-center gap-[42px] relative">
                 <blockquote className="relative w-64 max-[767px]:w-[100%]  font-['Aeonik'] font-medium text-[18px] leading-[155%] tracking-[0] text-[#0e0637] text-[#0e0637] text-center ">
-                  "{testimonial.quote}"
+                &quot;{testimonial.quote}&quot;
                 </blockquote>
 
                 <div className="flex items-start justify-center gap-4 relative">
