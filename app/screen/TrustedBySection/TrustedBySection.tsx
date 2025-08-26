@@ -61,12 +61,12 @@ export default function TrustedBySection  () {
 
               <div className="relative w-full overflow-hidden">
             <div className="flex gap-6 whitespace-nowrap animate-marquee">
-              {[...trustedCompanies, ...trustedCompanies].map((company, index) => (
+              {[...trustedCompanies, ...trustedCompanies , ...trustedCompanies , ...trustedCompanies ,...trustedCompanies, ...trustedCompanies].map((company, index) => (
                 <div
                   key={index}
-                  className="inline-block bg-white border-none  h-[72px] min-w-[150px] sm:min-w-[180px] md:minw-[200px] lg:min-w-[256px]  max-[550px]:px-0 max-[500px]:py-0"
+                  className="inline-block bg-white border-none  h-[72px] min-w-[180px] sm:min-w-[180px] md:minw-[200px] lg:min-w-[256px]  max-[550px]:px-0 max-[500px]:py-0"
                 >
-                  <div className="px-10 py-5 flex justify-center items-center h-full">
+                  <div className="px-10 py-5 max-[500px]:px-5 flex justify-center items-center h-full">
                     <img
                       src={company.src}
                       alt={company.alt}

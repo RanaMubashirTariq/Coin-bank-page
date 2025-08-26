@@ -146,7 +146,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
       <div className="relative w-full max-w-[120px] z-20">
         <div
           onClick={() => setOpen(!open)}
-          className="z-10 bg-white font-['Aeonik'] font-regular text-[14px] leading-[145%] tracking-[0]  text-[#0e0637]  border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[6px]"
+          className="z-10  font-['Aeonik'] font-regular text-[14px] leading-[145%] tracking-[0]  text-[#0e0637]  border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[6px]"
         >
           <span>{selected}</span>
           <ChevronDownIcon className="w-4 h-4" />
@@ -247,7 +247,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
             {/* mobile open */}
 
             {isMenuOpen && (
-  <div className="flex flex-col gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden z-50">
+  <div className="flex flex-col gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden">
     {navigationItems.map((item, index) => (
       <div key={index}>
         {item.hasDropdown ? (

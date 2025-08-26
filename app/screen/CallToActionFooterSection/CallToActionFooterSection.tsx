@@ -1,14 +1,7 @@
+'use client'
 import { ChevronDownIcon } from "lucide-react";
-import React from "react";
+import React , {useState} from "react";
 import { Button } from "../../components/ui/button";
-
-const priceData = [
-  { label: "$1600", className: "top-0" },
-  { label: "$1500", className: "top-[49px]" },
-  { label: "$1450", className: "top-[98px]" },
-  { label: "$1400", className: "top-[147px]" },
-  { label: "$1350", className: "top-[196px]" },
-];
 
 const monthLabels = [
   "Jan",
@@ -56,6 +49,12 @@ const developerLinks = [
 const resourceLinks = ["Blog", "Help & Support", "Customer Stories", "FAQ"];
 
 export default function CallToActionFooterSection  ()  {
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
+
+  const languages = ["English", "Spanish", "French", "German", "Chinese"];
+
   return (
     <section className="flex flex-col items-center justify-center gap-16 px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] max-[1000px]:py-[40px] py-[100px] w-full bg-[#f7f5fd] shadow-[0px_4px_200px_#e8f9f733]">
       <div className="flex h-[400px]  max-[1100px]:h-[620px] max-[767px]:h-[500px] max-[500px]:h-[470px] items-start  max-[1100px]:flex-col max-[1100px]:items-center pt-[88px] pb-28 px-16 max-[1100px]:px-10 max-[767px]:pt-[30px] max-[767px]:px-[20px] w-full bg-[#5235e8] rounded-3xl max-[767px]:rounded-2xl overflow-hidden relative">
@@ -125,12 +124,37 @@ export default function CallToActionFooterSection  ()  {
             />
 
             <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <div className="flex w-48 items-center justify-between pt-[7px] pb-2 px-3 bg-white rounded-lg border border-solid border-[#e3e3e7]">
-                <span className="font-['Aeonik'] font-medium text-[12px] leading-[135%] tracking-[0.5%] text-[#0e0637]">
-                  English
-                </span>
-                <img className="w-4 h-4" alt="Icon" src="/icon-17.png.png" />
-              </div>
+            <div className="relative w-48">
+      {/* Input with clickable image */}
+      <div className="flex items-center justify-between pt-[7px] pb-2 px-3 bg-white rounded-lg border border-solid border-[#e3e3e7] cursor-pointer"
+           onClick={() => setIsOpen(!isOpen)}>
+        <input
+          type="text"
+          value={selectedLanguage}
+          readOnly
+          className="font-['Aeonik'] font-medium text-[12px] leading-[135%] tracking-[0.5%] text-[#0e0637] outline-none bg-transparent w-full cursor-pointer z-10"
+        />
+        <img className="w-4 h-4 ml-2" alt="Dropdown Icon" src="/icon-17.png.png" />
+      </div>
+
+      {/* Dropdown */}
+      {isOpen && (
+        <div className="absolute top-full mt-1 w-full bg-white border border-[#e3e3e7] rounded-lg shadow-lg z-20">
+          {languages.map((lang) => (
+            <div
+              key={lang}
+              className="px-3 py-2 text-[12px] hover:bg-gray-100 cursor-pointer"
+              onClick={() => {
+                setSelectedLanguage(lang);
+                setIsOpen(false);
+              }}
+            >
+              {lang}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
 
               <div className="flex items-center justify-between gap-4 w-[164px]">
                  <img  className="w-5 h-5 z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90  " alt="Socials"  src="/instagram.png" />

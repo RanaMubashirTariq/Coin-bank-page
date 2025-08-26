@@ -26,7 +26,7 @@ export default function FeaturesListSection  () {
       <img
         className="absolute w-[950px] h-[578px] max-[767px]:h-auto  max-[1100px]:left-[300px] top-0 left-[490px]"
         alt="Pattern"
-        src="/pattern-1.png"
+        src="/Pattern-1.png"
       />
 
       <header className="flex-col items-center gap-4 inline-flex relative z-10">
