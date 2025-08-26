@@ -25,7 +25,7 @@ export default function TradingInsightsSection  () {
             {cryptoIcons.map((icon, index) => (
               <img
                 key={`crypto-icon-${index}`}
-                className={`relative ${icon.size} ${icon.marginLeft} ${icon.zIndex} ${icon.margin || ""}`}
+                className={`relative ${icon.size} ${icon.marginLeft} ${icon.zIndex}`}
                 alt={icon.alt}
                 src={icon.src}
               />
