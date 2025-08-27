@@ -224,12 +224,12 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
     <Button
       variant="outline"
       onClick={onSignInClick}
-      className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90   h-auto px-6 py-[11px] rounded-lg border-[#d6d1f9]"
+      className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90   h-auto px-6 py-[11px] rounded-lg border-[#d6d1f9] bg-white"
     >
       <span className="font-['Aeonik'] font-regular text-[16px] max-[767px]:text-[14px] leading-[160%] tracking-[0.5%]  text-[#0e0637]">Sign In</span>
     </Button>
     <Button className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90   h-auto px-6 py-[11px] bg-white text-[#5235e8] rounded-lg border border-[#d6d1f9] hover:bg-gray-50">
-      <span className="font-['Aeonik'] font-regular text-[16px] max-[767px]:text-[14px] leading-[160%] tracking-[0]  text-[#0e0637] text-[#5235e8]">Get Started</span>
+      <span className="font-['Aeonik'] font-regular text-[16px] max-[767px]:text-[14px] leading-[160%] tracking-[0]  text-[#0e0637] text-[#5235e8] bg-white">Get Started</span>
     </Button>
   </div>
 
@@ -325,7 +325,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
               <div className="px-6 py-3 w-full h-12 bg-white rounded-lg shadow-drop-shadow-2 flex items-start">
                 <Input
                   placeholder="Your email address"
-                  className="border-0 p-0 h-full bg-transparent  outline-none font-['Aeonik'] font-medium  text-[14px] tracking-[0%] leading-[145%]  text-[#9b9baa] focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-none shadow-none"
+                  className="border-0 p-0 h-full bg-transparent  outline-none font-['Aeonik'] font-medium  text-[14px] tracking-[0%] leading-[145%] placeholder:text-[#0e0637]  text-[#0e0637] focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-none shadow-none"
                 />
               </div>
             </div>

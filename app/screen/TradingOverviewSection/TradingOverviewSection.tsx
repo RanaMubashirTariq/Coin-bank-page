@@ -91,8 +91,8 @@ export default function TradingOverviewSection  ()  {
       <div className="flex items-start max-[767px]:flex-col gap-8 relative flex-[0_0_auto]">
         <Card className=" w-full max-w-[544px] max-[767px]:max-w-[100%] inline-flex flex-col items-start  bg-white rounded-3xl border-2 border-solid border-[#eeecfc] shadow-[0px_12px_80px_#5235e81a] relative overflow-hidden">
           <CardContent className="p-0">
-            <div className="w-full  h-[250px] max-[1000px]:h-[180px] relative overflow-hidden">
-                    <img src="/supercharge-illustration-1.png" className="w-full h-full rounded-3xl" alt="" />
+            <div className="w-full  flex items-center justify-center  h-[250px] max-[1000px]:h-[180px] relative overflow-hidden">
+                    <img src="/supercharge-illustration-1.png" className="w-full h-full rounded-3xl object-cover max-[1100px]:object-left max-[1100px]:mr-[40px]" alt="" />
               </div>
 
             <div className="flex-col items-start gap-4 pt-8 pb-12 px-12 inline-flex relative max-[1000px]:px-5 max-[767px]:pb-[30px]">
@@ -111,8 +111,8 @@ export default function TradingOverviewSection  ()  {
 
         <Card className="w-full max-w-[544px] max-[767px]:max-w-[100%] inline-flex flex-col items-start  bg-white rounded-3xl border-2 border-solid border-[#eeecfc] shadow-[0px_12px_80px_#5235e81a] relative overflow-hidden">
           <CardContent className="p-0">
-            <div className="w-full h-[250px] max-[1000px]:h-[150px] max-[767px]:h-[180px] relative overflow-hidden">
-                  <img src="/supercharge-illustration-2.png" className="w-full h-full rounded-3xl" alt="" />
+            <div className="w-full h-[250px] max-[1000px]:h-[180px] max-[870px]:h-[150px] max-[767px]:h-[180px] relative overflow-hidden">
+                  <img src="/supercharge-illustration-2.png" className="w-full h-full rounded-3xl object-cover" alt="" />
             </div>
 
             <div className="flex-col items-start gap-4 pt-8 pb-12 px-12 inline-flex relative max-[1000px]:px-5 max-[767px]:pb-[30px]">
