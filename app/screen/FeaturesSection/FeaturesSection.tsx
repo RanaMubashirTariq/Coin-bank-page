@@ -2,12 +2,12 @@ import React from "react";
 
 export default function FeaturesSection  ()  {
   const verticalLines = [
-    { src: "/line-99.png" },
-    { src: "/line-99.png" },
-    { src: "/line-99.png" },
-    { src: "/line-99.png" },
-    { src: "/line-99.png" },
-    { src: "/line-103.png", className: "mr-[-1.00px]" },
+    { src: "/Line-99.png" },
+    { src: "/Line-99.png" },
+    { src: "/Line-99.png" },
+    { src: "/Line-99.png" },
+    { src: "/Line-99.png" },
+    { src: "/Line-103.png", className: "mr-[-1.00px]" },
   ];
 
   return (

@@ -4,27 +4,27 @@ import { Card, CardContent } from "../../components/ui/card";
 export default function TradingOverviewSection  ()  {
   const backgroundLines = [
     {
-      src: "/line-99-1.png",
+      src: "/Line-99-1.png",
       className: "self-stretch w-px rotate-180 relative object-cover",
     },
     {
-      src: "/line-99-1.png",
+      src: "/Line-99-1.png",
       className: "self-stretch w-px rotate-180 relative object-cover",
     },
     {
-      src: "/line-99-1.png",
+      src: "/Line-99-1.png",
       className: "self-stretch w-px rotate-180 relative object-cover",
     },
     {
-      src: "/line-99-1.png",
+      src: "/Line-99-1.png",
       className: "self-stretch w-px rotate-180 relative object-cover",
     },
     {
-      src: "/line-99-1.png",
+      src: "/Line-99-1.png",
       className: "self-stretch w-px rotate-180 relative object-cover",
     },
     {
-      src: "/line-103.png",
+      src: "/Line-103.png",
       className:
         "self-stretch w-px mr-[-1.00px] rotate-180 relative object-cover",
     },
