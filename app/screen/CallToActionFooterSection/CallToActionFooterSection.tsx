@@ -143,7 +143,7 @@ export default function CallToActionFooterSection  ()  {
           {languages.map((lang) => (
             <div
               key={lang}
-              className="px-3 py-2 text-[12px] hover:bg-gray-100 cursor-pointer"
+              className="px-3 py-2 text-[12px] text-[#0e0637] hover:bg-gray-100 cursor-pointer"
               onClick={() => {
                 setSelectedLanguage(lang);
                 setIsOpen(false);
