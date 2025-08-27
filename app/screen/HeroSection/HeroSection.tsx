@@ -325,7 +325,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
               <div className="px-6 py-3 w-full h-12 bg-white rounded-lg shadow-drop-shadow-2 flex items-start">
                 <Input
                   placeholder="Your email address"
-                  className="border-0 p-0 h-full bg-transparent  outline-none font-['Aeonik'] font-medium  text-[14px] tracking-[0%] leading-[145%] placeholder:text-[#0e0637]  text-[#0e0637] focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-none shadow-none"
+                  className="border-0 p-0 h-full bg-transparent  outline-none font-['Aeonik'] font-medium  text-[14px] tracking-[0%] leading-[145%] placeholder:text-black  text-black focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-none shadow-none"
                 />
               </div>
             </div>
