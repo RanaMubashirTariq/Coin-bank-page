@@ -166,14 +166,14 @@ export default function CallToActionFooterSection  ()  {
             </div>
           </div>
 
-          <div className="font-['Aeonik'] font-medium text-[14px] leading-[145%] tracking-[0.5%] text-[#9c9cab] whitespace-nowrap">
+          <div className="font-['Aeonik'] font-regular text-[14px] leading-[145%] tracking-[0.5%] text-[#9c9cab] whitespace-nowrap">
             Copyright 2022 © Coinbank
           </div>
         </div>
 
         <div className="inline-flex items-start max-[767px]:flex-wrap gap-8 relative ">
           <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-            <h3 className="w-40 max-[1100px]:w-[120px] max-[767px]:w-[160px] max-[500px]:w-[120px]  text-[#131216]  font-['Aeonik'] font-medium text-[16px] leading-[160%] tracking-[0.5%]">
+            <h3 className="w-40 max-[1100px]:w-[120px] max-[767px]:w-[160px] max-[500px]:w-[120px]  text-[#131316]  font-['Aeonik'] font-medium text-[16px] leading-[160%] tracking-[0.5%]">
               Company
             </h3>
             <nav className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
@@ -191,7 +191,7 @@ export default function CallToActionFooterSection  ()  {
           </div>
 
           <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-            <h3 className="w-40 max-[1100px]:w-[120px] max-[767px]:w-[160px] max-[500px]:w-[120px] text-[#131216] text-[#5235e8] font-['Aeonik'] font-medium text-[16px] leading-[160%] tracking-[0.5%]">
+            <h3 className="w-40 max-[1100px]:w-[120px] max-[767px]:w-[160px] max-[500px]:w-[120px] text-[#131316] text-[#5235e8] font-['Aeonik'] font-medium text-[16px] leading-[160%] tracking-[0.5%]">
               Features
             </h3>
             <nav className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">

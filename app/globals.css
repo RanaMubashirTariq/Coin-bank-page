@@ -5,6 +5,8 @@
   --foreground: #171717;
 }
 
+
+
 @font-face{
   font-family: 'Aeonik';
   src: url('./fonts/Aeonik/Aeonik-Regular.otf')  format('opentype');
@@ -55,6 +57,7 @@ body {
   color: var(--foreground);
   font-family: 'Aeonik';
 }
+
 html{
   scroll-behavior: smooth;
   scroll-padding: 120px;
