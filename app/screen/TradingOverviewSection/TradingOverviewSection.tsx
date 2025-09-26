@@ -65,7 +65,7 @@ export default function TradingOverviewSection  ()  {
 
   return (
     <section className="justify-center gap-[88px] max-[767px]:gap-[30px] px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] py-[100px] max-[1000px]:py-[40px] bg-white overflow-hidden flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
-      <div className="inline-flex h-[964px] items-start gap-56 absolute top-0 left-40 -rotate-180">
+      <div className="inline-flex h-[964px] items-start gap-56 absolute top-0 left-auto -rotate-180">
         {backgroundLines.map((line, index) => (
           <img
             key={`line-${index}`}
