@@ -152,7 +152,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
           <ChevronDownIcon className="w-4 h-4" />
         </div>
         {open && (
-          <ul className="absolute top-full max-[1000px]:left-[120px] max-[1000px]:top-[10px] w-full bg-white border border-gray-200 rounded-[6px] shadow-md z-51 ">
+          <ul className="absolute top-full max-[1000px]:left-[120px] max-[500px]:left-[130px] max-[500px]:top-[20px] max-[1000px]:top-[10px] w-full bg-white border border-gray-200 rounded-[6px] shadow-md z-51 ">
             {options.map((option) => (
               <li
                 key={option.label}
@@ -247,7 +247,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
             {/* mobile open */}
 
             {isMenuOpen && (
-  <div className="flex flex-col  gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden">
+  <div className="flex flex-col  gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden w-[30%] max-[500px]:w-[50%] max-[350px]:w-[60%]">
     {navigationItems.map((item, index) => (
       <div key={index}>
         {item.hasDropdown ? (
