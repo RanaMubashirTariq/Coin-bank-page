@@ -6,7 +6,7 @@ export default function TradingInsightsSection  () {
     { src: "/crypto.png", alt: "Crypto", zIndex: "z-40", size: "w-12 h-12" },
     { src: "/crypto-2.png", alt: "Crypto", zIndex: "z-30", size: "w-[50px] h-[50px]", marginLeft: "-ml-1" },
     { src: "/crypto-3.png", alt: "Crypto", zIndex: "z-20", size: "w-12 h-12", marginLeft: "-ml-1" },
-    { src: "/crypto-4.png", alt: "Crypto", zIndex: "z-10", size: "w-12 h-12", marginLeft: "-ml-1" },
+    { src: "/crypto-1.png", alt: "Crypto", zIndex: "z-10", size: "w-12 h-12", marginLeft: "-ml-1" },
     { src: "/crypto-5.png", alt: "Crypto", zIndex: "z-0", size: "w-12 h-12", marginLeft: "-ml-1" },
   ];
   

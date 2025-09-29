@@ -54,7 +54,7 @@ export default function BlockchainTypesSection  () {
       percentage: "1.37%",
     },
     {
-      logo: "/crypto-5.png",
+      logo: "/crypto-1.png",
       name: "Achain",
       symbol: "ACN",
       price: "$165,8",
@@ -150,7 +150,7 @@ export default function BlockchainTypesSection  () {
                       Monthly
                     </span>
 
-                    <ChevronDownIcon className="relative w-4 h-4" />
+                    <ChevronDownIcon className="relative w-4 h-4  text-[#000000]" />
                   </button>
 
                   <div className="absolute w-[177px] h-10 top-0 left-0">

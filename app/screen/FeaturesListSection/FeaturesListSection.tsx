@@ -11,8 +11,8 @@ export default function FeaturesListSection  () {
   ];
 
   return (
-    <section className="justify-center gap-20 max-[1000px]:pt-10 max-[1000px]:gap-15 max-[767px]:gap-[30px] pt-[100px] pb-12 px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] overflow-hidden bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(239,237,253,1)_92%)] flex flex-col items-center relative w-full">
-      <div className="inline-flex h-[964px] max-[1100px]:h-auto  items-start gap-56 absolute top-0 left-40 -rotate-180">
+    <section className="justify-center gap-20 max-[1000px]:pt-10 max-[1000px]:gap-15 max-[767px]:gap-[30px] pt-[100px] pb-12 max-[767px]:pb-2 px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] overflow-hidden bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(239,237,253,1)_92%)] flex flex-col items-center relative w-full">
+      <div className="inline-flex h-[964px] max-[1100px]:h-auto  items-start gap-56    absolute top-0 left-40 -rotate-180">
         {verticalLines.map((line, index) => (
           <img
             key={`line-${index}`}
@@ -46,7 +46,7 @@ export default function FeaturesListSection  () {
       </header>
 
       <img
-        className="relative w-[1120px] h-[164px] max-[767px]:h-auto z-10"
+        className="relative w-[1120px] h-[164px] max-[767px]:h-auto z-10 max-[500px]:border rounded-full max-[500px]:border-black/6"
         alt="Illustration"
         src="/illustration-1.png"
       />

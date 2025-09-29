@@ -12,7 +12,7 @@ export default function FeaturesSection  ()  {
 
   return (
     <section className="gap-16 max-[767px]:gap-[30px] pt-[100px] max-[1000px]:pt-10  pb-0 px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(239,237,253,1)_67%,rgba(255,255,255,1)_100%)] flex flex-col items-center relative w-full">
-      <div className="inline-flex h-[964px] max-[1100px]:h-[764px] w-[1120px] max-[1300px]:w-[1050px] max-[1100px]:w-[824px] 
+      <div className="inline-flex h-[964px] max-[1100px]:h-[764px] max-[767px]:h-[600px] w-[1120px] max-[1300px]:w-[1050px] max-[1100px]:w-[824px] 
     max-[1000px]:w-[80%] items-start gap-56 absolute top-0 left-40 max-[1300px]:left-[100px] 
     max-[1000px]:left-[50px] z-10 -rotate-180">
         {verticalLines.map((line, index) => (

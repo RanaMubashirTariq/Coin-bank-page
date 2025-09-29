@@ -143,7 +143,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
     };
 
     return (
-      <div className="relative w-full max-w-[120px] z-20">
+      <div className="relative w-full max-w-[120px] z-51 bg-white">
         <div
           onClick={() => setOpen(!open)}
           className="z-10  font-['Aeonik'] font-regular text-[14px] leading-[145%] tracking-[0]  text-[#0e0637]  border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[6px]"
@@ -152,12 +152,12 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
           <ChevronDownIcon className="w-4 h-4" />
         </div>
         {open && (
-          <ul className="absolute top-full mt-1 w-full bg-white border border-gray-200 rounded-[10px] shadow-md z-40">
+          <ul className="absolute top-full max-[1000px]:left-[120px] max-[1000px]:top-[10px] w-full bg-white border border-gray-200 rounded-[6px] shadow-md z-51 ">
             {options.map((option) => (
               <li
                 key={option.label}
                 onClick={() => handleSelect(option)}
-                className="px-2 py-2 bg-white  text-[#0e0637] cursor-pointer hover:bg-gray-100 font-['Aeonik'] font-regular text-[12px] leading-[145%] tracking-[0]  text-[#0e0637] ]"
+                className="px-2 py-2 bg-white  text-[#0e0637] cursor-pointer hover:bg-gray-100 font-['Aeonik'] font-regular text-[12px] leading-[145%] tracking-[0]  text-[#0e0637] rounded-[6px]"
               >
                 {option.label}
               </li>
@@ -185,7 +185,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
   {/* Desktop Navigation */}
   <div className="hidden min-[1021px]:flex items-center gap-10">
     {navigationItems.map((item, index) => (
-      <div key={index} className="flex items-center gap-2">
+      <div key={index} className="flex items-center gap-2 ">
         {item.hasDropdown ? (
           item.label === "Features" ? (
             <CustomDropdown
@@ -238,7 +238,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
     className="min-[1021px]:hidden p-2"
     onClick={() => setIsMenuOpen(!isMenuOpen)}
   >
-    {isMenuOpen ? <XIcon className="w-6 h-6" /> : <MenuIcon className="w-6 h-6" />}
+    {isMenuOpen ? <XIcon className="w-6 h-6 text-[#5253e8]" /> : <MenuIcon className="w-6 h-6 text-[#5253e8]" />}
   </button>
 </nav>
             
@@ -247,7 +247,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
             {/* mobile open */}
 
             {isMenuOpen && (
-  <div className="flex flex-col gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden">
+  <div className="flex flex-col  gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden">
     {navigationItems.map((item, index) => (
       <div key={index}>
         {item.hasDropdown ? (
@@ -322,7 +322,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
 
           <div className="flex items-center gap-4 w-full max-[340px]:flex-col ">
             <div className="flex flex-col gap-[7px] flex-1">
-              <div className="px-6 py-3 w-full h-12 bg-white rounded-lg shadow-drop-shadow-2 flex items-start">
+              <div className="px-6 py-3 w-full h-12 bg-white rounded-lg shadow-drop-shadow-2 flex items-start max-[767px]:border max-[767px]:border-black/6">
                 <Input
                   placeholder="Your email address"
                   className="border-0 p-0 h-full bg-transparent  outline-none font-['Aeonik'] font-regular  text-[14px] tracking-[0%] leading-[145%] placeholder:text-[#9c9cab]  text-[#9c9cac] focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-none shadow-none"
@@ -330,7 +330,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
               </div>
             </div>
 
-            <Button className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90   w-[133px] max-[500px]:w-[90px] max-[500px]:h-10  h-auto px-6 py-[11px] bg-[#5235e8] rounded-lg hover:bg-[#4429d1]">
+            <Button className="z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90   w-[133px] max-[500px]:w-[90px] max-[500px]:h-12  h-auto px-6 py-[11px] bg-[#5235e8] rounded-lg hover:bg-[#4429d1]">
               <span className=" font-['Aeonik'] font-medium text-[#5235e8] text-[16px] max-[767px]:text-[14px] tracking-[0.5%] leading-[160%]  text-white">
                 Get Started
               </span>
