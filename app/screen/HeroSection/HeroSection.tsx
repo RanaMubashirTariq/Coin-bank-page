@@ -247,7 +247,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
             {/* mobile open */}
 
             {isMenuOpen && (
-  <div className="flex flex-col  gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden w-[30%] max-[500px]:w-[50%] max-[350px]:w-[60%]">
+  <div className="flex flex-col  gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden w-[100%] ">
     {navigationItems.map((item, index) => (
       <div key={index}>
         {item.hasDropdown ? (
