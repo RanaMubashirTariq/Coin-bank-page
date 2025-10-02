@@ -25,7 +25,7 @@ export default function Home() {
                   <section id="dashboard">
                   <FeaturesSection/>
                   </section>
-                  <section id="portfolio">
+                  <section id="portfolio"> 
                   <FeaturesListSection/>
                   </section>
                <section id="wallet">

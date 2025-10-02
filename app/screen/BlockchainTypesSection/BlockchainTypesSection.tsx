@@ -66,24 +66,24 @@ export default function BlockchainTypesSection  () {
   return (
     <section className="justify-center gap-[88px] max-[767px]:gap-[30px] px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] py-[100px] overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(247,246,254,1)_92%)] flex flex-col items-center relative w-full">
 
-    <header className="flex-col items-start gap-4 inline-flex relative">
-      <div className="w-fit text-[#5235e8] text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
+    <header className="flex-col items-start gap-4 inline-flex relative w-[1300px] max-[1500px]:w-[100%]">
+      <div className="w-fit text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
         FEATURES
       </div>
   
-      <h2 className="relative w-[402px] max-[767px]:w-[100%] font-['Aeonik'] text-[#0e0637] font-medium text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1]">
+      <h2 className="relative w-[402px] max-[767px]:w-[100%] font-['Aeonik'] text-[#0e0637] font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1]">
         Seamless Trading
       </h2>
   
-      <div className="inline-flex max-[1100px]:flex-col  max-[1100px]:gap-6 items-start gap-16 relative">
-        <p className="w-[640px] max-[1100px]:w-full font-['Aeonik'] text-[16px] max-[767px]:text-[14px] leading-[160%] text-[#717184]">
+      <div className="inline-flex max-[1100px]:flex-col  max-[1100px]:gap-6 items-start justify-between gap-50 max-[1500px]:gap-16 relative">
+        <p className="w-[640px] max-[1100px]:w-full font-['Aeonik'] text-[17px] max-[1500px]:text-[16px] max-[767px]:text-[14px] leading-[160%] text-[#717184]">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
             ullamco est sit aliqua dolor.
         </p>
   
-        <p className="w-[416px] max-[1100px]:w-full font-['Aeonik'] text-[16px] max-[767px]:text-[14px] leading-[160%] text-[#717184]">
+        <p className="w-[416px] max-[1100px]:w-full font-['Aeonik'] text-[17px] max-[1500px]:text-[16px] max-[767px]:text-[14px] leading-[160%] text-[#717184]">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
@@ -91,7 +91,7 @@ export default function BlockchainTypesSection  () {
       </div>
     </header>
   
-    <div className="gap-16 max-[767px]:gap-[30px] inline-flex max-[1100px]:flex-col items-start relative w-full">
+    <div className="gap-16 max-[767px]:gap-[30px] inline-flex max-[1100px]:flex-col items-start justify-between pr-[30px] max-[1500px]:pr-0 relative w-full max-w-[1300px]">
       {/* Left Card */}
       <Card className="relative w-[640px] max-[1100px]:w-full max-[519px]:hidden h-[402px] bg-white rounded-3xl border-2 border-solid border-[#eeecfc] shadow-[20px_20px_80px_#5235e81a]">
       <CardContent className="p-0 relative w-full h-full">

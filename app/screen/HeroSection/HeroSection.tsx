@@ -97,6 +97,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
   const [features, setFeatures] = useState("Features");
   const [company, setCompany] = useState("Company");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isActive , setIsActive] = useState( false);
 
   const navigationItems = [
     { label: "Features", hasDropdown: true },
@@ -143,21 +144,21 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
     };
 
     return (
-      <div className="relative w-full max-w-[120px] z-51 bg-white">
+      <div className="relative w-full max-w-[120px] max-[1000px]:max-w-[90px] z-51 ">
         <div
           onClick={() => setOpen(!open)}
-          className="z-10  font-['Aeonik'] font-regular text-[14px] leading-[145%] tracking-[0]  text-[#0e0637]  border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[6px]"
+          className="z-10  font-['Aeonik'] font-regular max-[17px] max-[1500px]:text-[14px] leading-[145%] tracking-[0]  text-[#0e0637] hover:text-[#5235e8]  border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[6px]"
         >
           <span>{selected}</span>
           <ChevronDownIcon className="w-4 h-4" />
         </div>
         {open && (
-          <ul className="absolute top-full max-[1000px]:left-[120px] max-[500px]:left-[130px] max-[500px]:top-[20px] max-[1000px]:top-[10px] w-full bg-white border border-gray-200 rounded-[6px] shadow-md z-51 ">
+          <ul className="absolute top-full  max-[1000px]:left-[100px] max-[500px]:top-[10px] max-[1000px]:top-[10px] w-full bg-white border border-gray-200 rounded-[6px] shadow-md z-51 ">
             {options.map((option) => (
               <li
                 key={option.label}
                 onClick={() => handleSelect(option)}
-                className="px-2 py-2 bg-white  text-[#0e0637] cursor-pointer hover:bg-gray-100 font-['Aeonik'] font-regular text-[12px] leading-[145%] tracking-[0]  text-[#0e0637] rounded-[6px]"
+                className="px-2 py-2 bg-white  text-[#0e0637] cursor-pointer hover:bg-gray-100 font-['Aeonik'] font-regular text-[14px] max-[1500px]:text-[13px] leading-[145%] tracking-[0]  text-[#0e0637] rounded-[6px]"
               >
                 {option.label}
               </li>
@@ -178,14 +179,14 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
             
   return (
     <section className="flex flex-col items-center relative w-full overflow-hidden shadow-[0px_4px_200px_#e8f9f733] bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(247,246,254,1)_92%)]">
-       <header className="fixed z-50 flex flex-col items-start gap-2 px-12 max-[767px]:px-[25px] py-6 w-full bg-[#ffffff66] backdrop-blur-2xl backdrop-brightness-[100%]">
-       <nav className="relative w-full flex items-center justify-between max-w-[1344px] mx-auto">
+       <header className="fixed z-50 flex flex-col items-start gap-2 px-25 max-[1500px]:px-12 max-[767px]:px-[25px] py-6  w-full bg-[#ffffff66] backdrop-blur-2xl backdrop-brightness-[100%]">
+       <nav className="relative w-full flex items-center justify-between max-w-[1600px] max-[1500px]:max-w-[1344px] mx-auto">
   <img className="w-40 h-8 max-[500px]:w-30" alt="Logo" src="/coinbank-logo.png" />
 
   {/* Desktop Navigation */}
   <div className="hidden min-[1021px]:flex items-center gap-10">
     {navigationItems.map((item, index) => (
-      <div key={index} className="flex items-center gap-2 ">
+      <div key={index} className="flex items-center gap-2">
         {item.hasDropdown ? (
           item.label === "Features" ? (
             <CustomDropdown
@@ -202,9 +203,10 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
           ) : null
         ) : (
           <div
-            className="cursor-pointer font-['Aeonik'] font-regular text-[14px] leading-[145%] tracking-[0]  text-[#0e0637]"
+            className="cursor-pointer font-['Aeonik'] font-regular text-[17px] max-[1500px]:text-[14px] leading-[145%] tracking-[0]  text-[#0e0637] hover:text-[#5235e8]"
             onClick={() => {
               if (item.id) {
+                   
                 const section = document.getElementById(item.id);
                 if (section) {
                   section.scrollIntoView({ behavior: "smooth" });
@@ -235,10 +237,12 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
 
   {/* Mobile Menu Button */}
   <button
-    className="min-[1021px]:hidden p-2"
+    className="min-[1021px]:hidden p-2 rounded-lg hover:bg-white/20 transition-all duration-200 transform hover:scale-105"
     onClick={() => setIsMenuOpen(!isMenuOpen)}
   >
-    {isMenuOpen ? <XIcon className="w-6 h-6 text-[#5253e8]" /> : <MenuIcon className="w-6 h-6 text-[#5253e8]" />}
+    <div className="transition-transform duration-300">
+        <MenuIcon className="w-6 h-6 text-[#5253e8]" />
+    </div>
   </button>
 </nav>
             
@@ -246,8 +250,12 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
 
             {/* mobile open */}
 
-            {isMenuOpen && (
-  <div className="flex flex-col  gap-4 mt-4 p-4 bg-white rounded-lg shadow-lg min-[1021px]:hidden w-[100%] ">
+  {/* Mobile Menu Sliding from Right */}
+<div
+  className={` fixed top-[70px] right-0 h-[100vh] w-[250px] bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 min-[1021px]:hidden 
+  ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}
+>
+  <div className="flex flex-col gap-4 p-4 relative">
     {navigationItems.map((item, index) => (
       <div key={index}>
         {item.hasDropdown ? (
@@ -266,9 +274,9 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
           ) : null
         ) : (
           <div
-            className="cursor-pointer font-['Aeonik'] font-regular text-[14px] leading-[145%] tracking-[0]  text-[#0e0637] py-2"
+            className="cursor-pointer font-['Aeonik'] text-[14px] leading-[145%] tracking-[0] text-[#0e0637] py-2"
             onClick={() => {
-              setIsMenuOpen(false); // close menu after click
+              setIsMenuOpen(false); // close after click
               if (item.id) {
                 const section = document.getElementById(item.id);
                 if (section) {
@@ -283,16 +291,25 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
       </div>
     ))}
 
-    <div className="flex flex-col gap-2 mt-4">
-      <Button variant="outline" onClick={onSignInClick} className="w-full z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90  ">Sign In</Button>
-      <Button className="w-full bg-[#5235e8] text-white z-11 cursor-pointer transform transition-transform duration-300 hover:scale-90  ">Get Started</Button>
+    <div className="flex flex-col gap-2 mt-4 ">
+      <Button
+        variant="outline"
+        onClick={onSignInClick}
+        className="w-full cursor-pointer transform transition-transform duration-300 hover:scale-90 font-['Aeonik']"
+      >
+        Sign In
+      </Button>
+      <Button className="w-full bg-[#5235e8] text-white cursor-pointer transform transition-transform duration-300 hover:scale-90 font-['Aeonik']">
+        Get Started
+      </Button>
     </div>
   </div>
-)}
+</div>
+
 
       </header>
 
-      <main className="flex items-start justify-between max-[1000px]:flex-col gap-10 max-[1300px]:gap-[50px] max-[1000px]:gap-10  pt-[150px] pb-20 max-[1000px]:pt-[120px] max-[1000px]:pb-10 px-40 max-[1300px]:px-[50px] max-[1100px]:px-[50px] max-[767px]:px-[25px] relative w-full  ">
+      <main className="flex items-start justify-between max-[1000px]:flex-col gap-10 max-[1300px]:gap-[50px] max-[1000px]:gap-10  pt-[150px] pb-20 max-[1000px]:pt-[120px] max-[1000px]:pb-10 px-[200px] max-[1500px]:px-40 max-[1300px]:px-[50px] max-[1100px]:px-[50px] max-[767px]:px-[25px] relative w-full  ">
       <div className="absolute top-0 left-0 w-full  h-full flex justify-between ">
   {Array.from({ length: 6 }).map((_, i) => (
     <div
@@ -303,13 +320,13 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
 </div>
 
         <div className="flex flex-col items-start max-[1000px]:items-center gap-12 max-[1000px]:gap-6 z-10 max-[1100px]:w-[450px] max-[1000px]:w-[500px] max-[1000px]:mx-auto max-[767px]:w-[100%] max-[767px]:mx-0 ">
-          <div className="flex flex-col items-start max-[1000px]:items-center  gap-6 max-[1000px]:gap-4">
-            <div className="font-['Aeonik'] font-medium text-[#5235e8] max-[1000px]:text-center text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[4%] leading-[160%] whitespace-nowrap">
+          <div className="flex flex-col items-start max-[1000px]:items-center  gap-6 max-[1000px]:gap-4 max-[500px]:gap-3">
+            <div className="font-['Aeonik'] font-medium text-[#5235e8] max-[1000px]:text-center text-[16px] max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[4%] leading-[160%] whitespace-nowrap">
               SIGN IN TO YOUR SECURE WALLET!
             </div>
 
-            <div className="flex flex-col items-start gap-8 max-[1000px]:gap-5">
-              <h1 className="w-full max-w-[488px] max-[1000px]:max-w-[100%] max-[1000px]:text-center font-['Aeonik'] font-medium text-[64px] max-[1100px]:text-[52px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-1%] leading-[110.001%] text-[#0e0637]">
+            <div className="flex flex-col items-start gap-8 max-[1000px]:gap-5 max-[500px]:gap-3">
+              <h1 className="w-full max-w-[588px] max-[1500px]:max-w-[488px] max-[1000px]:max-w-[100%] max-[1000px]:text-center font-['Aeonik'] font-medium text-[74px] max-[1500px]:text-[64px] max-[1100px]:text-[52px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-1%] leading-[110.001%] text-[#0e0637]">
                 The next-gen crypto wallet &amp; trading platform
               </h1>
 
@@ -322,7 +339,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
 
           <div className="flex items-center gap-4 w-full max-[340px]:flex-col ">
             <div className="flex flex-col gap-[7px] flex-1">
-              <div className="px-6 py-3 w-full h-12 bg-white rounded-lg shadow-drop-shadow-2 flex items-start max-[767px]:border max-[767px]:border-black/6">
+              <div className="px-6 py-3 w-full h-12 bg-white rounded-lg shadow-drop-shadow-2 flex items-start border border-black/6">
                 <Input
                   placeholder="Your email address"
                   className="border-0 p-0 h-full bg-transparent  outline-none font-['Aeonik'] font-regular  text-[14px] tracking-[0%] leading-[145%] placeholder:text-[#9c9cab]  text-[#9c9cac] focus-visible:ring-0 focus-visible:ring-offset-0 focus:shadow-none shadow-none"
@@ -338,7 +355,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
           </div>
         </div>
 
-        <div className="relative w-[544px] h-[480px] max-[1100px]:w-[400px] max-[1000px]:w-[100%] max-[1000px]:h-auto">
+        <div className="relative w-[670px] h-[530px] max-[1500px]:w-[544px] max-[1500px]:h-[480px] max-[1100px]:w-[400px] max-[1000px]:w-[100%] max-[1000px]:h-auto">
            <img src="/Illustration.png" className="w-full h-full  object-cover max-[1100px]:object-contain max-[1000px]:object-cover" alt="" />
         </div>
       </main>
@@ -349,12 +366,12 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
             <div key={index} className="flex flex-col items-center  gap-2">
               {stat.hasBadge ? (
                 <div className="flex w-full  max-w-[352px] max-[800px]:max-w-[150px] items-center justify-center gap-2">
-                  <div className="font-['Aeonik'] font-medium text-[40px] max-[1100px]:text-[36px] max-[1000px]:text-[28px] max-[767px]:text-[24px] leading-[140%] tracking-[-1%] text-[#0e0637] text-center">
+                  <div className="font-['Aeonik'] font-medium text-[48px] max-[1500px]:text-[40px] max-[1100px]:text-[36px] max-[1000px]:text-[28px] max-[767px]:text-[24px] leading-[140%] tracking-[-1%] text-[#0e0637] text-center">
                     {stat.value}
                   </div>
 
                   <Badge className="px-3 py-1 bg-[#daf626] text-[#0e0637] rounded-3xl hover:bg-[#daf626]">
-                    <span className="font-['Aeonik'] font-medium text-[12px] leading-[135%] tracking-[0.5%] text-[#0e0637] text-center">
+                    <span className="font-['Aeonik'] font-medium text-[14px] max-[1500px]:text-[12px] leading-[135%] tracking-[0.5%] text-[#0e0637] text-center">
                       {stat.badgeText}
                     </span>
                   </Badge>

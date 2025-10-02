@@ -84,10 +84,10 @@ function SignInModal({ onClose }: { onClose: () => void }) {
 
           <div className="px-6 pt-8 pb-6">
             <h2 id="signin-title" className="text-2xl font-medium tracking-tight text-[#0e0637] leading-tight font-['Aeonik']">
-              Sign in
+              Welcome Back 
             </h2>
             <p className="mt-2 text-sm text-gray-600 font-regular font-['Aeonik'] text-[#717184]">
-              Welcome back! Please enter your details.
+             Please enter your details.
             </p>
 
             <form onSubmit={onSubmit} className="mt-6 space-y-4">

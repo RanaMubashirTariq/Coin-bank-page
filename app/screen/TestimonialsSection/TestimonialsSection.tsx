@@ -33,28 +33,28 @@ const testimonials = [
 
 export default function TestimonialsSection  () {
   return (
-    <section className="flex flex-col items-center justify-center gap-16 max-[767px]:gap-[30px]  px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] max-[1000px]:py-[40px] py-[100px] relative w-full bg-[#f7f5fd] shadow-[0px_4px_200px_#e8f9f733]">
+    <section className="flex flex-col items-center justify-center gap-16 max-[767px]:gap-[30px]  px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] max-[1000px]:py-[40px] py-[100px] relative w-full   bg-[#f7f5fd] shadow-[0px_4px_200px_#e8f9f733]">
       <div className="w-full h-[732px] top-0 bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(255,255,255,0)_100%)] absolute left-0" />
 
       <header className="flex flex-col items-center gap-4 relative">
-        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap">
+        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap">
           TESTIMONIALS
         </div>
 
-        <h2 className="relative w-fit font-['Aeonik'] text-center font-medium text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%] text-[#0e0637]">
+        <h2 className="relative w-fit font-['Aeonik'] text-center font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%] text-[#0e0637]">
           Trusted by more than 100K+ people
         </h2>
 
-        <p className="relative w-fit font-['Aeonik'] text-center font-medium text-[16px] max-[767px]:text-[14px] leading-[160%] tracking-[0.5%] text-[#717184] text-center ">
+        <p className="relative w-fit font-['Aeonik'] text-center font-medium text-lg max-[1500px]:text-[16px] max-[767px]:text-[14px] leading-[160%] tracking-[0.5%] text-[#717184] text-center ">
           Hear what they say about us and why you should choose Coinbank
         </p>
       </header>
 
-      <div className="flex items-start max-[1020px]:flex-wrap max-[1020px]:items-center max-[1020px]:justify-center gap-8 max-[1100px]:gap-5 relative">
+      <div className="flex items-start   max-[1020px]:flex-wrap max-[1020px]:items-center max-[1020px]:justify-center gap-8 max-[1100px]:gap-5 relative">
         {testimonials.map((testimonial, index) => (
           <Card
             key={index}
-            className="w-full max-w-[352px] max-[800px]:max-w-[300px] max-[767px]:max-w-[100%] flex flex-col items-center gap-12  pt-12 pb-[52px] px-12 max-[1100px]:py-5 max-[1100px]:px-5 relative bg-white rounded-2xl border-0 shadow-none"
+            className="w-full max-w-[400px]  flex flex-col items-center gap-12  pt-12 pb-[52px] px-12 max-[1100px]:py-5 max-[1100px]:px-5 relative bg-white rounded-2xl border-0 shadow-none"
           >
             <CardContent className="flex flex-col items-center gap-12 p-0">
               <div className="flex items-start gap-3 relative">
@@ -72,7 +72,7 @@ export default function TestimonialsSection  () {
                 </blockquote>
 
                 <div className="flex items-start justify-center gap-4 relative">
-                  <Avatar className="w-10 h-10">
+                  <Avatar className="w-12 h-12 max-[1500px]:w-10 max-[1500px]:h-10">
                     <AvatarImage
                       src={testimonial.avatar}
                       alt={testimonial.name}
@@ -87,11 +87,11 @@ export default function TestimonialsSection  () {
                   </Avatar>
 
                   <div className="flex flex-col items-start gap-0.5 relative">
-                    <div className="relative w-fit  font-['Aeonik'] font-medium text-[14px] leading-[145%] tracking-[0] text-[#0e0637] text-black whitespace-nowrap">
+                    <div className="relative w-fit  font-['Aeonik'] font-medium text-base max-[1500px]:text-[14px] leading-[145%] tracking-[0] text-[#0e0637] text-black whitespace-nowrap">
                       {testimonial.name}
                     </div>
 
-                    <div className="relative w-fit  font-['Aeonik'] font-medium text-[12px] leading-[135%] tracking-[0] text-[#717184]  whitespace-nowrap">
+                    <div className="relative w-fit  font-['Aeonik'] font-medium text-[14px] max-[1500px]:text-[12px] leading-[135%] tracking-[0] text-[#717184]  whitespace-nowrap">
                       {testimonial.role}
                     </div>
                   </div>

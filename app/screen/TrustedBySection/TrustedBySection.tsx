@@ -42,16 +42,16 @@ export default function TrustedBySection  () {
 
   return (
     <section className="flex flex-col items-center gap-12 pt-[100px] pb-12 px-40 max-[1300px]:px-[50px] max-[1000px]:pt-[40px] max-[1000px]:pb-[40px] relative self-stretch w-full flex-[0_0_auto] bg-white">
-      <div className="flex-col items-center gap-4 inline-flex relative flex-[0_0_auto]">
-        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-sm max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[140%] whitespace-nowrap">
+      <div className="flex-col items-center gap-4 max-[500px]:gap-2 inline-flex relative flex-[0_0_auto]">
+        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-base max-[1500px]:text-sm max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[140%] whitespace-nowrap">
           PARTNERS
         </div>
 
-        <h2 className="relative  font-['Aeonik'] font-medium text-[#0e0637] text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-1%] leading-[140%]">
+        <h2 className="relative  font-['Aeonik'] font-medium text-[#0e0637] text-[52px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-1%] leading-[140%]">
           We&apos;re backed by the best
         </h2>
 
-        <p className="relative w-[457px] font-['Aeonik'] text-center font-regular text-[#717184] text-[16px] max-[767px]:text-[14px] tracking-[0.5%] leading-[150%]">
+        <p className="relative w-[457px] font-['Aeonik'] text-center font-regular text-[#717184] text-lg max-[1500px]:text-[16px] max-[767px]:text-[14px] tracking-[0.5%] leading-[150%]">
           Trusted by these blockchains leading industries
         </p>
       </div>
@@ -60,17 +60,17 @@ export default function TrustedBySection  () {
 
 
               <div className="relative w-full overflow-hidden">
-            <div className="flex gap-6 whitespace-nowrap animate-marquee">
+            <div className="flex gap-20 max-[1500px]:gap-[32px] whitespace-nowrap animate-marquee">
               {[...trustedCompanies, ...trustedCompanies , ...trustedCompanies , ...trustedCompanies ,...trustedCompanies, ...trustedCompanies].map((company, index) => (
                 <div
                   key={index}
                   className="inline-block bg-white border-none  h-[72px] min-w-[180px] sm:min-w-[180px] md:minw-[200px] lg:min-w-[256px]  max-[550px]:px-0 max-[500px]:py-0"
                 >
-                  <div className="px-10 py-5 max-[500px]:px-5 flex justify-center items-center h-full">
+                  <div className="max-[1500px]:px-10 max-[1500px]:py-5 max-[500px]:px-5 flex justify-center items-center h-full ">
                     <img
                       src={company.src}
                       alt={company.alt}
-                      className="object-contain h-full w-full"
+                      className="object-contain  h-full w-full"
                     />
                   </div>
                 </div>

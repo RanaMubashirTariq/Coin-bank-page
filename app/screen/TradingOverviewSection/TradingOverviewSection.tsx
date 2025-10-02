@@ -64,8 +64,8 @@ export default function TradingOverviewSection  ()  {
   ];
 
   return (
-    <section className="justify-center gap-[88px] max-[767px]:gap-[30px] px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] py-[100px] max-[1000px]:py-[40px] bg-white overflow-hidden flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
-      <div className="inline-flex h-[964px] items-start gap-56 absolute top-0 left-auto -rotate-180">
+    <section className="justify-center gap-[88px] max-[767px]:gap-[30px] px-40  max-[1300px]:px-[50px] max-[767px]:px-[25px] py-[100px] max-[1000px]:py-[40px] bg-white overflow-hidden flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
+      <div className="inline-flex  h-[964px] items-start gap-[260px] max-[1500px]:gap-56 absolute top-0 left-auto -rotate-180">
         {backgroundLines.map((line, index) => (
           <img
             key={`line-${index}`}
@@ -78,29 +78,29 @@ export default function TradingOverviewSection  ()  {
 
       <header className="flex-col items-center gap-6 inline-flex relative flex-[0_0_auto]">
         <div className="items-center gap-4 inline-flex flex-col relative flex-[0_0_auto]">
-          <div className="w-fit text-[#5235e8] text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
+          <div className="w-fit text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
             FEATURES
           </div>
 
-          <h2 className="relative w-[518px] max-[767px]:w-[100%] font-['Aeonik'] font medium text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%] text-center text-[#0e0637]">
+          <h2 className="relative w-[618px] max-[1500px]:w-[518px] max-[767px]:w-[100%] font-['Aeonik'] font medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%] text-center text-[#0e0637]">
             Supercharge your trades with advanced features
           </h2>
         </div>
       </header>
 
-      <div className="flex items-start max-[767px]:flex-col gap-8 relative flex-[0_0_auto]">
-        <Card className=" w-full max-w-[544px] max-[767px]:max-w-[100%] inline-flex flex-col items-start  bg-white rounded-3xl border-2 border-solid border-[#eeecfc] shadow-[0px_12px_80px_#5235e81a] relative overflow-hidden">
+      <div className="flex items-start justify-center max-[767px]:flex-col gap-8 relative flex-[0_0_auto] w-full">
+        <Card className=" w-full  max-w-[644px] max-[1500px]:max-w-[544px] max-[767px]:max-w-[100%] inline-flex flex-col items-start  bg-white rounded-3xl border-2 border-solid border-[#eeecfc] shadow-[0px_12px_80px_#5235e81a] relative overflow-hidden">
           <CardContent className="p-0">
-            <div className="w-full  flex items-center justify-center  h-[250px] max-[1000px]:h-[180px] relative overflow-hidden">
-                    <img src="/supercharge-illustration-1.png" className="w-full h-full rounded-3xl object-cover max-[1100px]:object-left max-[1100px]:mr-[40px]" alt="" />
+            <div className="w-full  flex items-center    h-[250px] max-[1000px]:h-[180px] relative overflow-hidden">
+                    <img src="/supercharge-illustration-1.png" className="w-full   h-full rounded-3xl object-cover max-[1100px]:object-left max-[1100px]:mr-[40px]" alt="" />
               </div>
 
             <div className="flex-col items-start gap-4 pt-8 pb-12 px-12 inline-flex relative max-[1000px]:px-5 max-[767px]:pb-[30px]">
-              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[24px] max-[1100px]:text-[20px] leading-[150%] tracking-[-1%]  text-[#0e0637]  whitespace-nowrap">
+              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[26px] max-[1500px]:text-[24px] max-[1100px]:text-[20px] leading-[150%] tracking-[-1%]  text-[#0e0637]  whitespace-nowrap">
                 Grow and earn everyday
               </h3>
 
-              <p className="relative w-full max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[16px]  leading-[160%] tracking-[0.5%] text-[#42424d]">
+              <p className="relative w-full max-[1500px]:max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[18px] max-[1500px]:text-[16px] leading-[160%] tracking-[0.5%] text-[#42424d]">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
@@ -109,18 +109,18 @@ export default function TradingOverviewSection  ()  {
           </CardContent>
         </Card>
 
-        <Card className="w-full max-w-[544px] max-[767px]:max-w-[100%] inline-flex flex-col items-start  bg-white rounded-3xl border-2 border-solid border-[#eeecfc] shadow-[0px_12px_80px_#5235e81a] relative overflow-hidden">
+        <Card className="w-full max-w-[644px] max-[1500px]:max-w-[544px] max-[767px]:max-w-[100%] inline-flex flex-col items-start  bg-white rounded-3xl border-2 border-solid border-[#eeecfc] shadow-[0px_12px_80px_#5235e81a] relative overflow-hidden">
           <CardContent className="p-0">
-            <div className="w-full h-[250px] max-[1000px]:h-[180px] max-[870px]:h-[150px] max-[767px]:h-[180px] relative overflow-hidden">
+            <div className="flex items-center  w-full h-[250px] max-[1000px]:h-[180px] max-[870px]:h-[150px] max-[767px]:h-[180px] relative overflow-hidden">
                   <img src="/supercharge-illustration-2.png" className="w-full h-full rounded-3xl object-cover" alt="" />
             </div>
 
             <div className="flex-col items-start gap-4 pt-8 pb-12 px-12 inline-flex relative max-[1000px]:px-5 max-[767px]:pb-[30px]">
-              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[24px] max-[1100px]:text-[20px] leading-[150%] tracking-[-1%]  text-[#0e0637]  ">
+              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[26px] max-[1500px]:text-[24px] max-[1100px]:text-[20px] leading-[150%] tracking-[-1%]  text-[#0e0637]  ">
                 Virtual cards powered by Mastercard
               </h3>
 
-              <p className="relative w-full max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[16px] leading-[160%] tracking-[0.5%] text-[#42424d] ">
+              <p className="relative w-full max-[1500px]:max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[17px] max-[1500px]:text-[16px] leading-[160%] tracking-[0.5%] text-[#42424d] ">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
