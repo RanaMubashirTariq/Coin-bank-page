@@ -79,7 +79,7 @@ export default function CallToActionFooterSection  ()  {
         </div>
 
         <div className="flex flex-col items-start max-[1100px]:items-center  gap-10 relative flex-[0_0_auto]">
-          <h2 className="w-[460px] max-[1500px]:w-[366px] max-[1100px]:w-[100%] max-[1100px]:text-center font-['Aeonik'] font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%]">
+          <h2 className="w-[460px] max-[1500px]:w-[366px] max-[1100px]:w-[100%] max-[1100px]:text-center font-['Aeonik'] font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[130%] leading-[140%] tracking-[-1%]">
             <span className="text-white">Sign in now </span>
             <span className="text-[#d6d1fa]">to get $50 worth of crypto</span>
           </h2>

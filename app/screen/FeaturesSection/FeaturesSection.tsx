@@ -33,16 +33,16 @@ export default function FeaturesSection  ()  {
     src="/Pattern.png"
   />
 
-      <header className="flex-col items-center mt-[100px] max-[1500px]:mt-0 max-[767px]:mt-0 gap-4 inline-flex relative w-[700px] max-[1500px]:w-[600px] z-10 max-[767px]:w-[100%]">
-        <div className="w-fit text-[#5235e8] text-[16px] max-[1500px]:text-[14px] max-[1000px]:text-[13px] text-center  tracking-[4%] leading-[140%] whitespace-nowrap relative mt-[-1.00px] font:['Aeonik'] font-medium">
+      <header className="flex-col items-center mt-[100px] max-[1500px]:mt-0 max-[767px]:mt-0 gap-4 max-[500px]:gap-2 inline-flex relative w-[700px] max-[1500px]:w-[600px] z-10 max-[767px]:w-[100%]">
+        <div className="w-fit text-[#5235e8] text-[16px] max-[1500px]:text-[14px] max-[1000px]:text-[13px] text-center max-[767px]:leading-[120%] tracking-[4%] leading-[140%] whitespace-nowrap relative mt-[-1.00px] font:['Aeonik'] font-medium">
           FEATURES
         </div>
 
-        <h2 className="font-['Aeonik'] font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] text-center leading-[140%] tracking-[-1%] text-[#0e0637]">
+        <h2 className="font-['Aeonik'] font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[120%] text-center leading-[140%] tracking-[-1%] text-[#0e0637]">
           Get a bird&apos;s eye view of your crypto investments
         </h2>
 
-        <p className="w-[520px] max-[1500px]:w-[457px] font-['Aeonik'] font-medium text-[18px] max-[1500px]:text-[16px] max-[767px]:text-[14px] text-center leading-[160%] tracking-[0.5%] text-[#717184]">
+        <p className="w-[520px] max-[1500px]:w-[457px] max-[767px]:w-[100%] font-['Aeonik'] font-medium text-[18px] max-[1500px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[150%] text-center leading-[160%] tracking-[0.5%] text-[#717184]">
           Keep up on all the latest trends in the crypto industry and stay ahead
           of the market.
         </p>

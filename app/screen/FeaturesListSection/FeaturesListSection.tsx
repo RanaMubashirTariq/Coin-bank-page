@@ -30,15 +30,15 @@ export default function FeaturesListSection  () {
       />
 
       <header className="flex-col items-center gap-4 inline-flex relative z-10">
-        <div className="w-fit text-[#5235e8] font-medium text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
+        <div className="w-fit text-[#5235e8] font-medium text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] max-[767px]:leading-[120%] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
           FEATURES
         </div>
 
-        <h2 className="relative w-fit  max-[767px]:w-[100%] text-center text-[#0e0637] font-medium font-['Aeonik'] text-[48px] max-[1500px]:text-[40px]  max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%]">
+        <h2 className="relative w-fit  max-[767px]:w-[100%] text-center text-[#0e0637] font-medium font-['Aeonik'] text-[48px] max-[1500px]:text-[40px]  max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[120%] leading-[140%] tracking-[-1%]">
           Many type of Blockchains
         </h2> 
 
-        <p className="w-[544px] max-[767px]:w-[100%]  text-center text-[#717184] font-medium font-['Aeonik'] text-[18px] max-[1500px]:text[16px] max-[767px]:text-[14px] leading-[160%] tracking-[0.5%]">
+        <p className="w-[544px] max-[767px]:w-[100%]  text-center text-[#717184] font-medium font-['Aeonik'] text-[18px] max-[1500px]:text[16px] max-[767px]:text-[14px] max-[767px]:leading-[150%] leading-[160%] tracking-[0.5%]">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.

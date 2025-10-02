@@ -321,16 +321,16 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
 
         <div className="flex flex-col items-start max-[1000px]:items-center gap-12 max-[1000px]:gap-6 z-10 max-[1100px]:w-[450px] max-[1000px]:w-[500px] max-[1000px]:mx-auto max-[767px]:w-[100%] max-[767px]:mx-0 ">
           <div className="flex flex-col items-start max-[1000px]:items-center  gap-6 max-[1000px]:gap-4 max-[500px]:gap-3">
-            <div className="font-['Aeonik'] font-medium text-[#5235e8] max-[1000px]:text-center text-[16px] max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[4%] leading-[160%] whitespace-nowrap">
+            <div className="font-['Aeonik'] font-medium text-[#5235e8] max-[1000px]:text-center text-[16px] max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] max-[767px]:leading-[140%] tracking-[4%] leading-[160%] whitespace-nowrap">
               SIGN IN TO YOUR SECURE WALLET!
             </div>
 
             <div className="flex flex-col items-start gap-8 max-[1000px]:gap-5 max-[500px]:gap-3">
-              <h1 className="w-full max-w-[588px] max-[1500px]:max-w-[488px] max-[1000px]:max-w-[100%] max-[1000px]:text-center font-['Aeonik'] font-medium text-[74px] max-[1500px]:text-[64px] max-[1100px]:text-[52px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-1%] leading-[110.001%] text-[#0e0637]">
+              <h1 className="w-full max-w-[588px] max-[1500px]:max-w-[488px] max-[1000px]:max-w-[100%] max-[1000px]:text-center font-['Aeonik'] font-medium text-[74px] max-[1500px]:text-[64px] max-[1100px]:text-[52px] max-[1000px]:text-[36px] max-[767px]:text-[28px]  tracking-[-1%] leading-[110.001%] text-[#0e0637]">
                 The next-gen crypto wallet &amp; trading platform
               </h1>
 
-              <p className="w-full max-w-[390px] max-[1000px]:max-w-[100%] max-[1000px]:text-center font-['Aeonik'] font-regular text-[#717184] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] tracking-[0] leading-[155%] ">
+              <p className="w-full max-w-[390px] max-[1000px]:max-w-[100%] max-[1000px]:text-center font-['Aeonik'] font-regular text-[#717184] text-[18px] max-[1100px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[150%] tracking-[0] leading-[155%] ">
                 All of your cryptocurrency in one place — from Bitcoin and
                 Ethereum to Litecoin and Ripple.
               </p>

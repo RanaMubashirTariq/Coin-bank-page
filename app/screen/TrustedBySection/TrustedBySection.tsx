@@ -43,15 +43,15 @@ export default function TrustedBySection  () {
   return (
     <section className="flex flex-col items-center gap-12 pt-[100px] pb-12 px-40 max-[1300px]:px-[50px] max-[1000px]:pt-[40px] max-[1000px]:pb-[40px] relative self-stretch w-full flex-[0_0_auto] bg-white">
       <div className="flex-col items-center gap-4 max-[500px]:gap-2 inline-flex relative flex-[0_0_auto]">
-        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-base max-[1500px]:text-sm max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[140%] whitespace-nowrap">
+        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-base max-[1500px]:text-sm max-[1000px]:text-[13px] max-[767px]:text-[12px] max-[767px]:leading-[120%] tracking-[0.56px] leading-[140%] whitespace-nowrap">
           PARTNERS
         </div>
 
-        <h2 className="relative  font-['Aeonik'] font-medium text-[#0e0637] text-[52px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] tracking-[-1%] leading-[140%]">
+        <h2 className="relative  font-['Aeonik'] font-medium text-[#0e0637] text-[52px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[120%] tracking-[-1%] leading-[140%]">
           We&apos;re backed by the best
         </h2>
 
-        <p className="relative w-[457px] font-['Aeonik'] text-center font-regular text-[#717184] text-lg max-[1500px]:text-[16px] max-[767px]:text-[14px] tracking-[0.5%] leading-[150%]">
+        <p className="relative w-[457px] font-['Aeonik'] text-center font-regular text-[#717184] text-lg max-[1500px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[150%] tracking-[0.5%] leading-[150%]">
           Trusted by these blockchains leading industries
         </p>
       </div>

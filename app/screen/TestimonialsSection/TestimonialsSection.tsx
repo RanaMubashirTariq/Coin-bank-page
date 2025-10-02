@@ -37,15 +37,15 @@ export default function TestimonialsSection  () {
       <div className="w-full h-[732px] top-0 bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(255,255,255,0)_100%)] absolute left-0" />
 
       <header className="flex flex-col items-center gap-4 relative">
-        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap">
+        <div className="relative w-fit  font-['Aeonik'] font-medium text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] max-[767px]:leading-[140%] tracking-[0.56px] leading-[19.6px] whitespace-nowrap">
           TESTIMONIALS
         </div>
 
-        <h2 className="relative w-fit font-['Aeonik'] text-center font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%] text-[#0e0637]">
+        <h2 className="relative w-fit font-['Aeonik'] text-center font-medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[120%] leading-[140%] tracking-[-1%] text-[#0e0637]">
           Trusted by more than 100K+ people
         </h2>
 
-        <p className="relative w-fit font-['Aeonik'] text-center font-medium text-lg max-[1500px]:text-[16px] max-[767px]:text-[14px] leading-[160%] tracking-[0.5%] text-[#717184] text-center ">
+        <p className="relative w-fit font-['Aeonik'] text-center font-medium text-lg max-[1500px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[150%] leading-[160%] tracking-[0.5%] text-[#717184] text-center ">
           Hear what they say about us and why you should choose Coinbank
         </p>
       </header>
@@ -56,7 +56,7 @@ export default function TestimonialsSection  () {
             key={index}
             className="w-full max-w-[400px]  flex flex-col items-center gap-12  pt-12 pb-[52px] px-12 max-[1100px]:py-5 max-[1100px]:px-5 relative bg-white rounded-2xl border-0 shadow-none"
           >
-            <CardContent className="flex flex-col items-center gap-12 p-0">
+            <CardContent className="flex flex-col items-center gap-12 max-[767px]:gap-8 p-0">
               <div className="flex items-start gap-3 relative">
                 {[...Array(5)].map((_, starIndex) => (
                   <StarIcon
@@ -66,8 +66,8 @@ export default function TestimonialsSection  () {
                 ))}
               </div>
 
-              <div className="flex flex-col items-center gap-[42px] relative">
-                <blockquote className="relative w-64 max-[767px]:w-[100%]  font-['Aeonik'] font-medium text-[18px] leading-[155%] tracking-[0] text-[#0e0637] text-[#0e0637] text-center ">
+              <div className="flex flex-col items-center gap-[42px] max-[767px]:gap-[30px] relative">
+                <blockquote className="relative w-64 max-[767px]:w-[100%]  font-['Aeonik'] font-medium text-[18px] max-[767px]:text-[16px] max-[767px]:leading-[150%] leading-[155%] tracking-[0] text-[#0e0637] text-[#0e0637] text-center ">
                 &quot;{testimonial.quote}&quot;
                 </blockquote>
 

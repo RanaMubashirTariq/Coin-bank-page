@@ -78,11 +78,11 @@ export default function TradingOverviewSection  ()  {
 
       <header className="flex-col items-center gap-6 inline-flex relative flex-[0_0_auto]">
         <div className="items-center gap-4 inline-flex flex-col relative flex-[0_0_auto]">
-          <div className="w-fit text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
+          <div className="w-fit text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] max-[767px]:leading-[140%] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
             FEATURES
           </div>
 
-          <h2 className="relative w-[618px] max-[1500px]:w-[518px] max-[767px]:w-[100%] font-['Aeonik'] font medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] leading-[140%] tracking-[-1%] text-center text-[#0e0637]">
+          <h2 className="relative w-[618px] max-[1500px]:w-[518px] max-[767px]:w-[100%] font-['Aeonik'] font medium text-[48px] max-[1500px]:text-[40px] max-[1000px]:text-[36px] max-[767px]:text-[28px] max-[767px]:leading-[120%] leading-[140%] tracking-[-1%] text-center text-[#0e0637]">
             Supercharge your trades with advanced features
           </h2>
         </div>
@@ -96,11 +96,11 @@ export default function TradingOverviewSection  ()  {
               </div>
 
             <div className="flex-col items-start gap-4 pt-8 pb-12 px-12 inline-flex relative max-[1000px]:px-5 max-[767px]:pb-[30px]">
-              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[26px] max-[1500px]:text-[24px] max-[1100px]:text-[20px] leading-[150%] tracking-[-1%]  text-[#0e0637]  whitespace-nowrap">
+              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[26px] max-[1500px]:text-[24px] max-[1100px]:text-[20px] max-[767px]:tex-[18px] max-[767px]:leading-[130%] leading-[150%] tracking-[-1%]  text-[#0e0637]  whitespace-nowrap">
                 Grow and earn everyday
               </h3>
 
-              <p className="relative w-full max-[1500px]:max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[18px] max-[1500px]:text-[16px] leading-[160%] tracking-[0.5%] text-[#42424d]">
+              <p className="relative w-full max-[1500px]:max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[18px] max-[1500px]:text-[16px] max-[767px]:text-[14px] max-[767px]:leading-[150%] leading-[160%] tracking-[0.5%] text-[#42424d]">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
@@ -116,11 +116,11 @@ export default function TradingOverviewSection  ()  {
             </div>
 
             <div className="flex-col items-start gap-4 pt-8 pb-12 px-12 inline-flex relative max-[1000px]:px-5 max-[767px]:pb-[30px]">
-              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[26px] max-[1500px]:text-[24px] max-[1100px]:text-[20px] leading-[150%] tracking-[-1%]  text-[#0e0637]  ">
+              <h3 className="relative w-fit font-['Aeonik'] font-medium text-[26px] max-[1500px]:text-[24px] max-[1100px]:text-[20px] max-[767px]:text-[18px] max-[767px]:leading-[130%] leading-[150%] tracking-[-1%]  text-[#0e0637]  ">
                 Virtual cards powered by Mastercard
               </h3>
 
-              <p className="relative w-full max-[1500px]:max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[17px] max-[1500px]:text-[16px] leading-[160%] tracking-[0.5%] text-[#42424d] ">
+              <p className="relative w-full max-[1500px]:max-w-[448px] max-[767px]:max-w-[100%] font-['Aeonik'] font-regular text-[17px] max-[1500px]:text-[16px] max-[767px]:tex-[14px] max-[767px]:leading-[150%] leading-[160%] tracking-[0.5%] text-[#42424d] ">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
