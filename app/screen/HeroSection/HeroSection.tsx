@@ -181,7 +181,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
     <section className="flex flex-col items-center relative w-full overflow-hidden shadow-[0px_4px_200px_#e8f9f733] bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(247,246,254,1)_92%)]">
        <header className="fixed z-50 flex flex-col items-start gap-2 px-25 max-[1500px]:px-12 max-[767px]:px-[25px] py-6  w-full bg-[#ffffff66] backdrop-blur-2xl backdrop-brightness-[100%]">
        <nav className="relative w-full flex items-center justify-between max-w-[1600px] max-[1500px]:max-w-[1344px] mx-auto">
-  <img className="w-40 h-8 max-[500px]:w-30" alt="Logo" src="/coinbank-logo.png" />
+  <img className="w-40 h-12 max-[1500px]:h-8 max-[500px]:w-30" alt="Logo" src="/coinbank-logo.png" />
 
   {/* Desktop Navigation */}
   <div className="hidden min-[1021px]:flex items-center gap-10">
