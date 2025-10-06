@@ -279,20 +279,26 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
   <div className="flex flex-col gap-4 p-4 relative">
     {navigationItems.map((item, index) => (
       <div key={index}>
-        {item.hasDropdown ? (
-          item.label === "Features" ? (
-            <CustomDropdown
-              options={dropdownData.Features}
-              selected={features}
-              setSelected={setFeatures}
-            />
-          ) : item.label === "Company" ? (
-            <CustomDropdown
-              options={dropdownData.Company}
-              selected={company}
-              setSelected={setCompany}
-            />
-          ) : null
+{item.hasDropdown ? (
+  item.label === "Features" ? (
+    <CustomDropdown
+      label="Features"
+      options={dropdownData.Features}
+      selected={features}
+      setSelected={setFeatures}
+      openDropdown={openDropdown}
+      setOpenDropdown={setOpenDropdown}
+    />
+  ) : item.label === "Company" ? (
+    <CustomDropdown
+      label="Company"
+      options={dropdownData.Company}
+      selected={company}
+      setSelected={setCompany}
+      openDropdown={openDropdown}
+      setOpenDropdown={setOpenDropdown}
+    />
+  )  : null
         ) : (
           <div
             className="cursor-pointer font-['Aeonik'] text-[14px] leading-[145%] tracking-[0] text-[#0e0637] py-2"
