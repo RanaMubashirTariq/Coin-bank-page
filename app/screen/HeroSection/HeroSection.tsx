@@ -136,7 +136,8 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
     setSelected: (value: string) => void;
     openDropdown: string | null;
     setOpenDropdown: (value: string | null) => void;
-  }) => {
+  }
+  ) => {
     const isOpen = openDropdown === label;
   
     const toggleDropdown = () => {
@@ -208,6 +209,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
   openDropdown={openDropdown}
   setOpenDropdown={setOpenDropdown}
 />
+
           ) : item.label === "Company" ? (
             <CustomDropdown
   label="Company"
@@ -217,6 +219,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
   openDropdown={openDropdown}
   setOpenDropdown={setOpenDropdown}
 />
+
 
           ) : null
         ) : (
