@@ -97,7 +97,8 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
   const [features, setFeatures] = useState("Features");
   const [company, setCompany] = useState("Company");
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isActive , setIsActive] = useState( false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
 
   const navigationItems = [
     { label: "Features", hasDropdown: true },
@@ -122,19 +123,29 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
   };
 
   const CustomDropdown = ({
+    label,
     options,
     selected,
     setSelected,
+    openDropdown,
+    setOpenDropdown,
   }: {
+    label: string;
     options: { label: string; id: string }[];
     selected: string;
     setSelected: (value: string) => void;
+    openDropdown: string | null;
+    setOpenDropdown: (value: string | null) => void;
   }) => {
-    const [open, setOpen] = useState(false);
-
+    const isOpen = openDropdown === label;
+  
+    const toggleDropdown = () => {
+      setOpenDropdown(isOpen ? null : label); // toggle
+    };
+  
     const handleSelect = (option: { label: string; id: string }) => {
       setSelected(option.label);
-      setOpen(false);
+      setOpenDropdown(null); // close after selecting
       if (option.id) {
         const element = document.getElementById(option.id);
         if (element) {
@@ -142,24 +153,23 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
         }
       }
     };
-
+  
     return (
-      <div className="relative w-full max-w-[120px] max-[1000px]:max-w-[90px] z-51 ">
+      <div className="relative w-full max-w-[120px] max-[1000px]:max-w-[90px] z-51">
         <div
-          onClick={() => setOpen(!open)}
-          className="z-10  font-['Aeonik'] font-regular max-[17px] max-[1500px]:text-[14px] leading-[145%] tracking-[0]  text-[#0e0637] hover:text-[#5235e8]  border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[6px]"
-        >
+          onClick={toggleDropdown}
+          className="z-10 font-['Aeonik'] font-regular max-[17px] max-[1500px]:text-[14px] leading-[145%] tracking-[0] text-[#0e0637] hover:text-[#5235e8] border-none rounded-[10px] py-1 cursor-pointer flex justify-between items-center gap-[6px]">
           <span>{selected}</span>
           <ChevronDownIcon className="w-4 h-4" />
         </div>
-        {open && (
-          <ul className="absolute top-full  max-[1000px]:left-[100px] max-[500px]:top-[10px] max-[1000px]:top-[10px] w-full bg-white border border-gray-200 rounded-[6px] shadow-md z-51 ">
+  
+        {isOpen && (
+          <ul className="absolute top-full max-[1000px]:left-[100px] max-[500px]:top-[10px] max-[1000px]:top-[10px] w-[78px] bg-white  rounded-[10px] shadow-md z-51 ">
             {options.map((option) => (
               <li
                 key={option.label}
                 onClick={() => handleSelect(option)}
-                className="px-2 py-2 bg-white  text-[#0e0637] cursor-pointer hover:bg-gray-100 font-['Aeonik'] font-regular text-[14px] max-[1500px]:text-[13px] leading-[145%] tracking-[0]  text-[#0e0637] rounded-[6px]"
-              >
+                className="px-2 py-2 bg-white text-[#0e0637] cursor-pointer hover:bg-gray-100 font-['Aeonik'] font-regular text-[14px] max-[1500px]:text-[13px] leading-[145%] tracking-[0] text-[#0e0637] rounded-[3px]" >
                 {option.label}
               </li>
             ))}
@@ -168,6 +178,7 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
       </div>
     );
   };
+  
 
 
 
@@ -190,16 +201,23 @@ export default function HeroSection  ({ onSignInClick }: { onSignInClick: () => 
         {item.hasDropdown ? (
           item.label === "Features" ? (
             <CustomDropdown
-              options={dropdownData.Features}
-              selected={features}
-              setSelected={setFeatures}
-            />
+  label="Features"
+  options={dropdownData.Features}
+  selected={features}
+  setSelected={setFeatures}
+  openDropdown={openDropdown}
+  setOpenDropdown={setOpenDropdown}
+/>
           ) : item.label === "Company" ? (
             <CustomDropdown
-              options={dropdownData.Company}
-              selected={company}
-              setSelected={setCompany}
-            />
+  label="Company"
+  options={dropdownData.Company}
+  selected={company}
+  setSelected={setCompany}
+  openDropdown={openDropdown}
+  setOpenDropdown={setOpenDropdown}
+/>
+
           ) : null
         ) : (
           <div
