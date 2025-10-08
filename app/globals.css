@@ -62,3 +62,10 @@ html{
   scroll-behavior: smooth;
   scroll-padding: 120px;
 }
+
+
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                /* Chrome, Safari */
+}

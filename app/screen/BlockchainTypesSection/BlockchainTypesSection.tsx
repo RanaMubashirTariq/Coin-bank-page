@@ -4,12 +4,31 @@ import { Card, CardContent } from "../../components/ui/card";
 
 export default function BlockchainTypesSection  () {
   const backgroundLines = [
-    { src: "/line-99-1.png" },
-    { src: "/line-99-1.png" },
-    { src: "/line-99-1.png" },
-    { src: "/line-99-1.png" },
-    { src: "/line-99-1.png" },
-    { src: "/line-103-1.png" },
+    {
+      src: "/Line-99-1.png",
+      className: "self-stretch w-px rotate-180 relative object-cover",
+    },
+    {
+      src: "/Line-99-1.png",
+      className: "self-stretch w-px rotate-180 relative object-cover",
+    },
+    {
+      src: "/Line-99-1.png",
+      className: "self-stretch w-px rotate-180 relative object-cover",
+    },
+    {
+      src: "/Line-99-1.png",
+      className: "self-stretch w-px rotate-180 relative object-cover",
+    },
+    {
+      src: "/Line-99-1.png",
+      className: "self-stretch w-px rotate-180 relative object-cover",
+    },
+    {
+      src: "/Line-103.png",
+      className:
+        "self-stretch w-px mr-[-1.00px] rotate-180 relative object-cover",
+    },
   ];
 
   const chartIndicators = [
@@ -65,7 +84,16 @@ export default function BlockchainTypesSection  () {
 
   return (
     <section className="justify-center gap-[88px] max-[767px]:gap-[30px] px-40 max-[1300px]:px-[50px] max-[767px]:px-[25px] py-[100px] max-[1000px]:py-10 overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(247,246,254,1)_92%)] flex flex-col items-center relative w-full">
-
+                 <div className="inline-flex  h-[964px] max-[1100px]:h-[1400px] items-start gap-[260px] max-[1500px]:gap-56 max-[1000px]:gap-40 max-[767px]:gap-25 max-[500px]:gap-20 absolute top-0 left-auto -rotate-180">
+        {backgroundLines.map((line, index) => (
+          <img
+            key={`line-${index}`}
+            className={line.className}
+            alt="Line"
+            src={line.src}
+          />
+        ))}
+      </div>
     <header className="flex-col items-start gap-4 max-[767px]:gap-2 inline-flex relative w-[1300px] max-[1500px]:w-[100%]">
       <div className="w-fit text-[#5235e8] text-base max-[1500px]:text-[14px] max-[1000px]:text-[13px] max-[767px]:text-[12px] max-[767px]:leading-[140%] tracking-[0.56px] leading-[19.6px] whitespace-nowrap relative font-['Aeonik'] font-medium">
         FEATURES
